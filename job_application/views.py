@@ -12,7 +12,7 @@ def index(request):
             last_name = form.cleaned_data["last_name"]
             email = form.cleaned_data["email"]
             occupation = form.cleaned_data["occupation"]
-
+            date=form.cleaned_data["date"]
             print(form.cleaned_data)
             Form.objects.create(first=first, last_name=last_name, email=email, occupation=occupation,
                                 date=date)
